@@ -1,0 +1,105 @@
+# Acesso: https://app.pagescms.org/ (autenticação via GitHub)
+media:
+  input: site/assets
+  output: /assets
+  rename: safe
+  extensions: [png, jpg, jpeg, webp, svg]
+
+content:
+  - name: institucional
+    label: Textos e imagens do site
+    type: file
+    path: site/data/site.json
+    format: json
+    fields:
+      - name: hero
+        label: Capa
+        type: object
+        fields:
+          - {name: kicker, label: Chamada superior, type: string}
+          - {name: line1, label: Título - linha 1, type: string}
+          - {name: line2, label: Título - linha 2, type: string}
+          - {name: highlight, label: Palavra em destaque, type: string}
+          - {name: subtitle, label: Subtítulo, type: text}
+          - {name: image, label: Fotografia de capa, type: image}
+      - name: about
+        label: Quem somos
+        type: object
+        fields:
+          - {name: aside, label: Texto lateral, type: text}
+          - {name: title1, label: Título - linha 1, type: string}
+          - {name: title2, label: Título - linha 2, type: string}
+          - {name: description, label: Descrição da associação, type: text}
+      - name: statement
+        label: Destaque ambiental
+        type: object
+        fields:
+          - {name: text, label: Frase de destaque, type: text}
+          - {name: image, label: Fotografia de destaque, type: image}
+      - name: impact
+        label: Nossa atuação
+        type: object
+        fields:
+          - {name: title1, label: Título - linha 1, type: string}
+          - {name: title2, label: Título - linha 2, type: string}
+          - {name: description, label: Descrição, type: text}
+          - name: pillars
+            label: Três pilares
+            type: object
+            list:
+              min: 3
+              max: 3
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - {name: title, label: Título, type: string}
+              - {name: description, label: Descrição, type: text}
+      - name: projects
+        label: Projetos socioambientais
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - {name: title, label: Nome do projeto, type: string, required: true}
+          - {name: category, label: Categoria, type: string}
+          - {name: description, label: Descrição, type: text, required: true}
+          - {name: image, label: Fotografia, type: image}
+          - {name: alt, label: Descrição acessível da imagem, type: string}
+      - name: gallery
+        label: Galeria de fotos
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - {name: image, label: Fotografia, type: image, required: true}
+          - {name: title, label: Legenda, type: string}
+          - {name: alt, label: Descrição acessível da fotografia, type: text}
+      - name: contact
+        label: Contato e redes sociais
+        type: object
+        fields:
+          - {name: description, label: Texto de contato, type: text}
+          - {name: instagram, label: Link do Instagram, type: string}
+          - {name: facebook, label: Link do Facebook, type: string}
+  - name: programacao
+    label: Eventos cadastrados manualmente
+    type: file
+    path: site/data/events.json
+    format: json
+    list: true
+    fields:
+      - {name: date, label: Data do evento (AAAA-MM-DD), type: string, required: true, pattern: '^\d{4}-\d{2}-\d{2}$'}
+      - {name: title, label: Nome do evento, type: string, required: true}
+      - {name: description, label: Descrição, type: text}
+      - name: type
+        label: Tipo
+        type: select
+        options:
+          values: ["Trilhas e passeios", "Eventos e ações ambientais", "Voluntariado", "Parcerias", "Outros"]
+      - {name: startTime, label: Horário (opcional, HH:MM), type: string}
+      - {name: link, label: Link para mais informações (opcional), type: string}

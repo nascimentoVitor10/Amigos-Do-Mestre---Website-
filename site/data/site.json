@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "kicker": "A NOSSA CAUSA É VIVA",
+    "line1": "A natureza",
+    "line2": "precisa de",
+    "highlight": "amigos",
+    "subtitle": "Um movimento de pessoas que acreditam na força de proteger o que é nosso.",
+    "image": "/assets/mestre-alvaro-paisagem.webp"
+  },
+  "about": {
+    "aside": "Nascemos do encontro entre pessoas, montanhas e o desejo de fazer a diferença.",
+    "title1": "Existe um lugar que nos conecta.",
+    "title2": "Uma causa que nos move.",
+    "description": "Somos o Instituto Amigos do Mestre Álvaro, uma organização sem fins lucrativos da Serra, no Espírito Santo. Atuamos pela proteção e valorização da Área de Proteção Ambiental Mestre Álvaro, aproximando pessoas da natureza por meio de experiências, educação e ação coletiva."
+  },
+  "statement": {
+    "text": "Um Mestre Álvaro vivo para todas as gerações.",
+    "image": "/assets/flores-da-mata.webp"
+  },
+  "impact": {
+    "title1": "Nosso jeito de",
+    "title2": "cuidar do mundo.",
+    "description": "Preservar vai além de proteger uma paisagem. É criar vínculos, despertar consciência e transformar cuidado em atitude.",
+    "pillars": [
+      {"title": "Preservar", "description": "Defesa da APA Mestre Álvaro, conscientização sobre a conservação e mobilização contra a degradação ambiental."},
+      {"title": "Educar", "description": "Iniciativas socioambientais, atividades educativas e experiências que despertam uma relação mais consciente com a natureza."},
+      {"title": "Conectar", "description": "Trilhas guiadas, encontros e ações coletivas que aproximam a comunidade e fortalecem o pertencimento."}
+    ]
+  },
+  "projects": [
+    {
+      "title": "Projeto Tororó",
+      "category": "NASCENTES",
+      "description": "Recuperação de nascentes e educação ambiental nas escolas, conectando o cuidado com a água à formação das próximas gerações.",
+      "image": "/assets/serra-verde.webp",
+      "alt": "Paisagem verde e montanhosa do Mestre Álvaro"
+    },
+    {
+      "title": "Por Inteiro",
+      "category": "BEM-ESTAR",
+      "description": "Meio Ambiente, Corpo e Mente: um convite ao bem-estar por meio de atividades físicas em contato com espaços verdes.",
+      "image": "/assets/trilha-em-grupo.webp",
+      "alt": "Pessoas caminhando juntas por uma trilha na montanha"
+    }
+  ],
+  "gallery": [
+    {"image": "/assets/comunidade-amigos.webp", "title": "Juntos pela mesma causa", "alt": "Voluntários reunidos com bandeiras e cartazes da associação"},
+    {"image": "/assets/mestre-alvaro-paisagem.webp", "title": "A força da nossa paisagem", "alt": "Formações rochosas e floresta do Mestre Álvaro"},
+    {"image": "/assets/trilha-em-grupo.webp", "title": "Todo caminho aproxima", "alt": "Grupo caminhando por uma trilha"},
+    {"image": "/assets/flores-da-mata.webp", "title": "Os detalhes da natureza", "alt": "Flores e vegetação da região"},
+    {"image": "/assets/serra-verde.webp", "title": "O território que cuidamos", "alt": "Montanha cercada por vegetação"}
+  ],
+  "contact": {
+    "description": "Quer participar de uma trilha, propor um evento, colaborar como voluntário ou apoiar um projeto? Escreva para a gente.",
+    "instagram": "https://www.instagram.com/amigosdomestrealvaro/",
+    "facebook": "https://www.facebook.com/amigosdomestrealvaro/"
+  }
+}
